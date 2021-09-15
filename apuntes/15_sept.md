@@ -40,4 +40,3 @@ La industria del conocimiento es muy poderosa actualmente. Hemos pasado de la pr
 #### Computer assisted reporting
 * El CAR ha promobido un alto estándar de noticias que cuenta la verdad. 
 * Para favorecer la verdad en el periodismo, podemos practicar periodismo de precisión. 
-* 
