@@ -4,3 +4,6 @@ Meteré este zip en la carpeta de mi git local, para subirlo a mi git remoto, en
 
 ### Enlace de ayuda para HTML: 
 https://developer.mozilla.org/en-US/
+
+El archivo de configuración de la terminal de Mac es .zshrc
+
