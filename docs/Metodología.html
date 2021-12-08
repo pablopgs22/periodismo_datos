@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es" class="h-100">
+<!-- Cambio el idioma de "en" a "es" -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Pablo Gutiérrez Sánchez">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Trabajo final de las pruebas de evaluación continua · Bootstrap v5.1</title>
+    <!-- Cambio el título a "Tranajo final..." -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">
+
+    
+
+    <!-- Bootstrap core CSS,la hoja de estilo básica de bootstrap, la he puesto en la carpeta css -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Pablo Gutiérrez Sánchez</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Ejercicio_1.html">Actividad 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Ejercicio_2.html">Actividad 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Actividad 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Ejercicio_4.html">Actividad 4</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Metodología.html">Metodología</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>    
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+<h1 id="cómo-lo-he-hecho">¿Cómo lo he hecho?</h1>
+<p>En primer lugar, me he descargado de <a href="https://getbootstrap.com/docs/5.1/examples/">Bootstrap</a> todos los ejemplos de los temas de Bootstrap en un archivo zip, aunque finalmente sólo he extraído la carpeta <code>sticky-footer-navbar</code>. Desde la terminal, con el comando <code>mv</code>, he movido el archivo <code>index.html</code> de esta carpeta al directorio <code>docs</code> de mi repositorio local <code>periodismo_datos</code>, para posteriormente abrirlo con el comando <code>nano</code> y modificar algunos elementos. Por ejemplo, he cambiado el idioma de inglés (<code>“en”</code>) a español (<code>“es”</code>) y el título (<code>title</code>) a “Trabajo final de las pruebas de evaluación continua”. Esta modificación la he comentado debajo, empleando la siguiente estructura: <code>&lt;!-- “comentario…” -- &gt;</code>, que es la propia de los comentarios en lenguaje HTML. Después, para aplicar el estilo a la página, he tenido que extraer del zip con los ejemplos de Bootstrap la carpeta <code>assets/dist/css</code>, donde están ubicados los archivos de estilo, <code>bootstrap.min.css</code>y <code>bootstrap.rtl.min.css</code>. A continuación, he movido estos archivos a una nueva carpeta dentro de <code>docs</code> llamada <code>css</code>. Finalmente, he abierto <code>index.html</code> de nuevo y, en el elemento de estilo (<code>&lt;/style&gt;</code>), he referido mis archivos <code>.css</code> con la siguiente línea:</p>
+<p><code>link href="css/sticky-footer-navbar.css"</code></p>
+<p>El siguiente elemento que he modificado dentro de <code>index.html</code> ha sido la del <code>&lt;header&gt;</code>, cuyo aspecto era así antes de mi modificación:</p>
+<pre><code>&lt;header&gt;
+  &lt;!-- Fixed navbar --&gt;
+  &lt;nav class=&quot;navbar navbar-expand-md navbar-dark fixed-top bg-dark&quot;&gt;
+    &lt;div class=&quot;container-fluid&quot;&gt;
+      &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Fixed navbar&lt;/a&gt;
+      &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; da&gt;
+        &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarCollapse&quot;&gt;
+        &lt;ul class=&quot;navbar-nav me-auto mb-2 mb-md-0&quot;&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link active&quot; aria-current=&quot;page&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=“nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link disabled&quot;&gt;Disabled&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;form class=&quot;d-flex&quot;&gt;
+          &lt;input class=&quot;form-control me-2&quot; type=&quot;search&quot; placeholder=&quot;Search&quot; a&gt;
+          &lt;button class=&quot;btn btn-outline-success&quot; type=&quot;submit&quot;&gt;Search&lt;/button&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+<p>Y ha acabado siendo así:</p>
+<pre><code>&lt;header&gt;
+  &lt;!-- Fixed navbar --&gt;
+  &lt;nav class=&quot;navbar navbar-expand-md navbar-dark fixed-top bg-dark&quot;&gt;
+    &lt;div class=&quot;container-fluid&quot;&gt;
+      &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Pablo Gutiérrez Sánchez&lt;/a&gt;
+      &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; da&gt;
+        &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarCollapse&quot;&gt;
+        &lt;ul class=&quot;navbar-nav me-auto mb-2 mb-md-0&quot;&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link active&quot; aria-current=&quot;page&quot; href=&quot;#&quot;&gt;Inicio&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=“#”&gt;Actividad 1&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=“#&quot;&gt;Actividad 2&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link disabled&quot;&gt;Actividad 3&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=“#&quot;&gt;Actividad 4&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;form class=&quot;d-flex&quot;&gt;
+          &lt;input class=&quot;form-control me-2&quot; type=&quot;search&quot; placeholder=&quot;Search&quot; a&gt;
+          &lt;button class=&quot;btn btn-outline-success&quot; type=&quot;submit&quot;&gt;Search&lt;/button&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+<p>Como puede apreciarse, he cambiado el nombre de los 3 apartados preexistentes (<code>Home</code> por <code>Inicio</code>, <code>Link</code> por <code>Actividad 1</code> y <code>Disabled</code> por <code>Actividad 2</code>) y he añadido otros dos nuevos —<code>Actividad 3</code> y <code>Actividad 4</code>— copiando el código de los anteriores y asignándoles otro nombre. En el caso del apartado <code>Disabled</code>, he tenido que cambiar también la línea:</p>
+<p><code>&lt;a class="nav-link disabled”…</code></p>
+<p>por</p>
+<p><code>&lt;a class=nav-link”…</code></p>
+<p>Sin embargo, ese mismo código lo he empleado para la <em>Actividad 3</em>, justamente porque me interesaba que apareciera como deshabilitada (puesto que no realicé esa práctica).</p>
+<p>Todo lo anterior me ha servido para que los apartados se llamaran como yo quería, pero aún quedaba enlazar dichos apartados con el contenido de mis ejercicios. Para eso, puesto que los archivos de mis ejercicios están originalmente en formato <code>markdown</code>, he tenido que hacer un paso previo. Con el comando <code>pandoc</code>, dentro de la terminal, he convertido los ejercicios de mi repositorio de <code>markdown</code> a <code>html</code>, llamando a los archivos resultantes de la siguiente forma: <code>ejercicio_base.html.</code> Paralelamente, he creado dos archivos, <code>cabecera.html</code> y <code>pie.html</code>, a partir de las primeras y últimas líneas (excluyendo la parte dedicada al contenido propiamente dicho de la página), respectivamente, del archivo <code>index.html</code>. Con estos dos archivos y la plantilla del ejercicio en cuestión, unidos los tres a través del comando <code>cat</code>, he obtenido los documentos que finalmente enlazaré en mi página. He llamado a estos documentos <code>ejercicio_1.html</code>, <code>ejercicio_2.html</code> y <code>ejercicio_4.html</code>. Finalmente, he enlazado estos tres archivos a su respectivo apartados, quedando así el elemento <code>header</code> de mi <code>index.html</code>:</p>
+<pre><code>&lt;header&gt;
+  &lt;!-- Fixed navbar --&gt;
+  &lt;nav class=&quot;navbar navbar-expand-md navbar-dark fixed-top bg-dark&quot;&gt;
+    &lt;div class=&quot;container-fluid&quot;&gt;
+      &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Pablo Gutiérrez Sánchez&lt;/a&gt;
+      &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; da&gt;
+        &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarCollapse&quot;&gt;
+        &lt;ul class=&quot;navbar-nav me-auto mb-2 mb-md-0&quot;&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link active&quot; aria-current=&quot;page&quot; href=&quot;#&quot;&gt;Inicio&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=&quot;Ejercicio_1.html&quot;&gt;Actividad 1&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=&quot;Ejercicio_2.html&quot;&gt;Actividad 2&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link disabled&quot;&gt;Actividad 3&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=&quot;Ejercicio_4.html&quot;&gt;Actividad 4&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;form class=&quot;d-flex&quot;&gt;
+          &lt;input class=&quot;form-control me-2&quot; type=&quot;search&quot; placeholder=&quot;Search&quot; a&gt;
+          &lt;button class=&quot;btn btn-outline-success&quot; type=&quot;submit&quot;&gt;Search&lt;/button&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+<p>Estos mismos cambios los he aplicado también en cada uno de los documentos <code>.html</code> de mi directorio <code>docs</code>, para que también desde ellos pueda accederse a los demás ejercicios y no redirijan a sí mismos, como ocurriría si dejara: <code>href=“#”</code>. Después, cuando he terminado de escribir la metolodogía en un archivo de formato markdown, lo he enlazado en los documentos <code>.html</code>siguiendo el mismo proceso que con los ejercicios. En este caso, he creado un nuevo apartado dentro del elemento <code>Header</code>:</p>
+<pre><code>      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;Metodología.html&quot;&gt;Metodología&lt;/a&gt;
+      &lt;/li&gt;</code></pre>
+<p>Estas tres líneas las he replicado en todos los documentos <code>.html</code> de mi carpeta <code>docs</code>. Ahora sólo falta que los cambios, hechos en mi repositorio local, se reflejan también en mi repositorio remoto en <code>GitHub</code>. Para ello, desde dentro de mi carpeta (<code>periodismo_datos</code>), en la terminal, ejecuto el comando <code>git add</code>:</p>
+<p><code>git add docs</code></p>
+<p>Después, con <code>git commit -m “8-dic”</code>, comento el cambio, registrando simplemente la fecha en que lo estoy haciendo. El último paso es hacer <code>git push</code> y, entonces, estará todo en mi repositorio de <code>GitHub</code>.</p>
+<p>Nota: para que la pagina se sirva desde <code>GitHub</code>, previamente hay que ir a <code>Settings</code> dentro de mi repositorio y luego al apartado <code>Pages</code>. En <code>Source</code>, le he dicho a <code>GitHub</code> que para la página beba de mi carpeta <code>Docs</code>. Para que el cambio se haga efectiva, le he dado a <code>Save</code>.</p>
+  </div>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Place sticky footer content here.</span>
+  </div>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
